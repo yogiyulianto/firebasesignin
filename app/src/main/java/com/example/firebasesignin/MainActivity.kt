@@ -12,6 +12,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.signin.SignInClient
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         
         val credential = GoogleAuthProvider.getCredential(acct.idToken, null)
         mAuth.signInWithCredential(credential).addOnCompleteListener(this){task ->
-            if (task.isSuccessfull){
+            if (task.isSuccessful){
                 Log.d("Login","SignInWithCredentialSuccess")
                 val user = mAuth.currentUser
                 updateUI(user)
@@ -66,14 +67,19 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-
     }
 
     public override fun onStart() {
         super.onStart()
         val currentUser = mAuth.currentUser
-        updateUI(cureentUser)
+        updateUI(currentUser)
+    }
+
+    private fun updateUI(user: FirebaseUser) {
+        if (user != null){
+            Toast.makeText(this,"Hello${user.displayName}", Toast.LENGTH_LONG).show()
+        }
+
     }
 
     private fun SignIn() {
