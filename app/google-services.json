@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "507636922764",
-    "firebase_url": "https://fir-signin-c300a.firebaseio.com",
-    "project_id": "fir-signin-c300a",
-    "storage_bucket": "fir-signin-c300a.appspot.com"
+    "project_number": "742712846617",
+    "firebase_url": "https://login-belajar.firebaseio.com",
+    "project_id": "login-belajar",
+    "storage_bucket": "login-belajar.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:507636922764:android:854f0cf7d88dc4f3",
+        "mobilesdk_app_id": "1:742712846617:android:854f0cf7d88dc4f3",
         "android_client_info": {
           "package_name": "com.example.firebasesignin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "507636922764-ghkdm063v4ha286e0c8l7247rh8rb750.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.firebasesignin",
-            "certificate_hash": "4490810540988a4dbd072fa430a382f56fd81df8"
-          }
-        },
-        {
-          "client_id": "507636922764-h5plg1emer0ikhg137ai3dec1c4jagnu.apps.googleusercontent.com",
+          "client_id": "742712846617-jbbtic14hr2vt612tf9kh8aq5vhi878b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCra2esXKdceRk-VpqiTUTfPXDA4DRVVbs"
+          "current_key": "AIzaSyAzCOHnD-0EREiD_Luyk3NOo3fx_CAM8n4"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "507636922764-h5plg1emer0ikhg137ai3dec1c4jagnu.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
